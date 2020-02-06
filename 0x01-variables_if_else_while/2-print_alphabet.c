@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - main block
+ * main - Entry point
  * Description : using the function "putchar" to print all the aplhbaets
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main (void)
 {
@@ -13,7 +13,7 @@ int main (void)
 		putchar (ch);
 		ch = ch + 1;
 	}
-	putchar ("\n");
+	putchar ('\n');
 
 	return (0);
 }
