@@ -4,7 +4,7 @@
  * Description : using the function "putchar" to print all the aplhbaets
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char ch = 'a';
 
