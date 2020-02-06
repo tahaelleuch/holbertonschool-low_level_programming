@@ -33,16 +33,22 @@ int main(void)
 			{
 				k++;
 			}
-			else if ((j < 56) && (k == 57))
-			{
-				k = 1 + ++j;
-			}
 			else
 			{
-				j = 1 + ++i;
-				k = 1 + j;
+				if (j < 56)
+				{
+					j++;
+					k = j + 1;
+				}
+				else
+				{
+					i++;
+					j = i + 1;
+				}
 			}
 		}
+
 	}
+
 	return (0);
 }
