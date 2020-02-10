@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
  * main - check the code for Holberton School students.
@@ -7,6 +6,7 @@
  */
 int print_sign(int n)
 {
+
 	if (n > 0)
 	{
 		_putchar('+');
@@ -22,5 +22,6 @@ int print_sign(int n)
                 _putchar('0');
 		return (0);
 	}
+
 }
 
