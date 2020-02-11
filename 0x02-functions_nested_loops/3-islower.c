@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _islower - Return 1 if letter is lowercase, 0 if not.
- *
- * Return: 1 if lowercase 0 if not.
+ * print_alphabet_x10 - prints the alphabet, ten times
+ * @c integer
+ * Return: Always 0.
  */
 int _islower(int c)
 {
