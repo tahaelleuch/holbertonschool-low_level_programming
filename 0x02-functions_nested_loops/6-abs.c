@@ -4,7 +4,7 @@
  * _abs: geting the absolute
  *
  * @n: integer to get the absolute
- * Return: the absolute vaule.
+ * Return: the absolute vaule of @n
  */
 int _abs(int n)
 {
