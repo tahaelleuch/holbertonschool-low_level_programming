@@ -11,12 +11,15 @@ int main(void)
 	long int c;
 	int i;
 
-	printf("%ld", a);
-	printf("%ld", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
-		printf("%ld", c);
+		if (i == 49)
+			printf("%ld", c);
+		else
+			printf("%ld ,", c);
 		a = b;
 		b = c;
 	}
