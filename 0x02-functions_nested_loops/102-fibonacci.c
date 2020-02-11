@@ -13,10 +13,10 @@ int main(void)
 
 	printf("%ld, ", a);
 	printf("%ld, ", b);
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 47; i++)
 	{
 		c = a + b;
-		if (i == 49)
+		if (i == 46)
 			printf("%ld", c);
 		else
 			printf("%ld ,", c);
