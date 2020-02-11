@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_sign - check the signe of an integer  
- *
- * @i: integer to check the signe
- * Return: 1 is lowercase 0 is upercase.
+ * print_last_digit - print the last digit of a number
+ * @n: int type number
+ * Return: return value of last digit
  */
 int print_sign(int n)
 {
