@@ -11,12 +11,12 @@ int main(void)
 	long int c;
 	int i;
 
-	printf("%d", a);
-	printf("%d", b);
+	printf("%ld", a);
+	printf("%ld", b);
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf("%ld", c);
 		a = b;
 		b = c;
 	}
