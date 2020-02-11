@@ -1,7 +1,9 @@
 #include "holberton.h"
+
 /**
- * geting the absolute
+ * _abs: geting the absolute
  *
+ * @n: integer to get the absolute
  * Return: the absolute vaule.
  */
 int _abs(int n)

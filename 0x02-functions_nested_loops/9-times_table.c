@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * times_table - prints times table
  *
@@ -19,6 +20,8 @@ void times_table(void)
 			if (((i * j) + '0') < 58)
 			{
 				_putchar((j * i) + '0');
+				if (j == 9)
+					goto back;
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
@@ -30,10 +33,13 @@ void times_table(void)
 				n = k / 10;
 				_putchar(n + '0');
 				_putchar(m + '0');
+				if (j == 9)
+					goto back;
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
+		back:
 		_putchar('\n');
 	}
 }

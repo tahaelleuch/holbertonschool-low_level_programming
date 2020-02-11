@@ -1,8 +1,9 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
- * main - check the code for Holberton School students.
+ * print_sign - check the signe of an integer  
  *
+ * @i: integer to check the signe
  * Return: 1 is lowercase 0 is upercase.
  */
 int print_sign(int n)
