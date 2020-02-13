@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * mul: multiplies two integers
+ * mul - multiplies two integers
  * @a: int to multipliate
  * @b: int to multipliate
+ *
  * Return: the result of multiplication
 */
 
