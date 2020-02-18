@@ -20,15 +20,15 @@ int _atoi(char *s)
 	{
 		if (s[j] == '-')
 			sign = sign * -1;
-		if (s[j] >= '0' && s[j] <= '9')
+		if ((s[j] >= '0') && (s[j] <= '9'))
 			break;
 	}
 	for (j = 0; j < i; j++)
 	{
-		if (s[j] >= '0' && s[j] <= '9')
+		if ((s[j] >= '0') && (s[j] <= '9'))
 			{
-			out = out * 10 + (s[j] - '0');
-			if (s[j + 1] < '0' || s[j + 1] > '9')
+			out = (out * 10) + (s[j] - '0');
+			if ((s[j + 1] < '0') || (s[j + 1] > '9'))
 				break;
 			}
 	}
