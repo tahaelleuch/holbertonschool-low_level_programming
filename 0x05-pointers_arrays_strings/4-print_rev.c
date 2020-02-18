@@ -1,13 +1,13 @@
 #include "holberton.h"
 /**
  * print_rev - prints a string in rev, followed by a new line, to stdout;
- * @c: the string to print
+ * @s: the string to print
  * Return: 0 Always
 */
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int i = 1;
 
 	while (s[i] != '\0')
 		i++;
