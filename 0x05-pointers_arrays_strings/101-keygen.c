@@ -15,17 +15,18 @@ int main(void)
 	char p[100];
 
 	srand(time(NULL));
-	for (i = 0; i < 100; i++)
+	while (i < 2772)
 	{
 		randnum = random() % 127;
-			if(randnum > 32)
+			if (randnum > 32)
 				{
 				p[j] = randnum;
 				j++;
+				i = i + randnum;
 				}
 	}
-	p[j] = '\0';
+	p[j] = 2772 - (i - randnum);
+	p[j + 1] = '\0';
 	printf("%s", p);
-
 	return (0);
 }
