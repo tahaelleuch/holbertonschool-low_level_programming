@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 /**
  * main - random  numbers
- * Crack a password
+ *
  * Return: 0 Always
 */
 
 int main(void)
 {
 	int i;
+	int j = 0;
 	int randnum;
 	char p[100];
 
@@ -16,10 +19,12 @@ int main(void)
 	{
 		randnum = random() % 127;
 			if(randnum > 32)
-				p[i] = randnum;
-			
+				{
+				p[j] = randnum;
+				j++;
+				}
 	}
-	p[101] = '\0';
+	p[j] = '\0';
 	printf("%s", p);
 
 	return (0);
