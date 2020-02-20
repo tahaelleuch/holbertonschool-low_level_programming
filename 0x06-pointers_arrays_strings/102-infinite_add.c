@@ -16,7 +16,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		j++;
 	if (i > size_r || j > size_r)
 		return (0);
-	for (k = 0; k < size_r - 1; i--, j--, k++)
+/**	for (k = 0; k < size_r - 1; i--, j--, k++)
 	{
 		digit = rest;
 		if (i >= 0)
@@ -44,5 +44,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[l] = rest;
 	}
 	return (r);
-
+*/
 }
