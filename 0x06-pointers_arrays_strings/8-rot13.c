@@ -16,7 +16,10 @@ char *rot13(char *c)
 		for (j = 0; one[j] != '\0'; j++)
 		{
 			if (c[i] == one[j])
+			{
 				c[i] = two[j];
+				break;
+			}
 		}
 	}
 	return (c);
