@@ -14,7 +14,7 @@ char *leet(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		for(j = 0; letters[j] != '\0'; j++)
+		for (j = 0; letters[j] != '\0'; j++)
 		{
 			if (c[i] == letters[j] || c[i] == up_letters[j])
 				c[i] = numbers[j];
