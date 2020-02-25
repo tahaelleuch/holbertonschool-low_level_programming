@@ -7,7 +7,7 @@
 */
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum = 0, sum2 = 0;
+	int i, j, sum = 0, som = 0;
 	int mid[1000][1000];
 	for (i = 0; i < size; i++)
 	{
@@ -18,8 +18,9 @@ void print_diagsums(int *a, int size)
 		}
 	}
 	for (i = 0, j = 0; i < size; i++, j++)
-		sum = mid[i][j];
-	for (i = size, j = size; i > 0; i++, j++)
-		sum2 = mid[i][j];
-	printf("%d, %d", sum, sum2);
+		sum = mid[i][j] + sum;
+	for (i = (size - 1), j = 0; i >= 0; i--, j++)
+		som = mid[i][j] + som;
+	printf("%d, ", sum);
+	printf("%d\n", som);
 }
