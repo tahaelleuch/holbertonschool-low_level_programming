@@ -3,6 +3,7 @@
  * get_the_sqrt - check for and get the sqrt with a compteur
  * @n: int to check
  * @i: int compteur
+ * Return: int the sqrt
 */
 int get_the_sqrt(int n, int i)
 {
