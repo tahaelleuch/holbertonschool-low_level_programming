@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 /**
  * get_the_length - get the length of a string
  * @s: char
@@ -6,10 +6,9 @@
 */
 int get_the_length(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
+	if (s[0] != '\0')
+		return (1 + get_the_length(s + 1));
+	return (0);
 }
 
 /**
