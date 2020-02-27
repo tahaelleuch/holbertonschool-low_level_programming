@@ -14,8 +14,9 @@ int get_the_length(char *s)
 /**
  * palin - subfunction palinfrom
  * @s: char
- * @len: length of the string
- * @count: count
+ * @i: length of the string
+ * @j: counter
+ * Return: int
 */
 int palin(char *s, int i, int j)
 {
@@ -34,8 +35,8 @@ int palin(char *s, int i, int j)
 */
 int is_palindrome(char *s)
 {
-	int len = get_the_length(s);
-	int count = 0;
+	int length = get_the_length(s);
+	int counter = 0;
 
-	return (palin(s, len - 1, count));
+	return (palin(s, length - 1, counter));
 }
