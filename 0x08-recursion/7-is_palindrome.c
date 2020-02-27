@@ -21,7 +21,7 @@ int get_the_length(char *s)
 int palin(char *s, int i, int j)
 {
 	if (s[i] == s[j])
-		if (i > j / 2)
+		if (i >= j / 2)
 			return (1);
 		else
 			return (palin(s, i + 1, j - 1));
