@@ -19,12 +19,13 @@ int get_the_length(char *s)
 */
 int palin(char *s, int i, int j)
 {
-	if (j >= i)
-		return (1);
-	else if (s[j] != s[i])
-		return (0);
+	if (s[i] == s[j])
+		if (i > j / 2)
+			return (1);
+		else
+			return (palin(s, i + 1, j - 1));
 	else
-		return (palin(j + 1, i - 1, s));
+		return (0);
 }
 /**
  * is_palindrome - chkeck for the palindrome
