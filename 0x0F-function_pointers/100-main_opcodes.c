@@ -15,8 +15,7 @@ int main(int argc, char **argv)
 		puts("Error\n");
 		exit(1);
 	}
-	n = atoi(argv[1]);
-	if (n < 0)
+	else if (argv[1][0] == '-')
 	{
 		puts("Error\n");
 		exit(2);
