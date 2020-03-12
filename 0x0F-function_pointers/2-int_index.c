@@ -5,6 +5,7 @@
  * @array: the array to check
  * @size: the size of the array
  * @cmp: function to pointer
+ * Return: int the index or -1 if not working
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
