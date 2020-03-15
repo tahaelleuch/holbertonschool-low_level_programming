@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	va_list valist;
 
 	va_start(valist, format);
-	while(format != NULL && format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		if (format[i + 1] == '\0')
 			sep = "";
