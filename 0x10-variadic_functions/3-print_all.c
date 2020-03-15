@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str;
-	char *sep;
+	char *sep = ", ";
 	va_list valist;
 
 	va_start(valist, format);
@@ -17,8 +17,6 @@ void print_all(const char * const format, ...)
 	{
 		if (format[i + 1] == '\0')
 			sep = "";
-		else
-			sep = ", ";
 		switch (format[i])
 		{
 			case 'i':
