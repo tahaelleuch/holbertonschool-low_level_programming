@@ -8,6 +8,7 @@
 size_t print_list(const list_t *h)
 {
 	unsigned long i;
+
 	for (i = 0; h; i++)
 	{
 		printf("[%lu] %s\n", h->len, h->str);
