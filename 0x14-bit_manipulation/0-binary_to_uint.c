@@ -2,7 +2,7 @@
 /**
  * binary_to_uint - function that converts a binary number to an int
  * @b: the binary dunction
- * @Return: unsigned int
+ * Return: unsigned int
 */
 unsigned int binary_to_uint(const char *b)
 {
@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	i--;
 	while (i >= 0)
 	{
-		if(b[i] == '1')
+		if (b[i] == '1')
 			u = u + mul;
 		mul = mul * 2;
 		i--;
