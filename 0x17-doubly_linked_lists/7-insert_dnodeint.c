@@ -4,13 +4,14 @@
  * @h: header of the linked list
  * @idx: the index where to add
  * @n: the value of the new node
+ * Return: the address of the new node, or NULL if it failed
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *node;
 	dlistint_t *new;
 
-	if (*h == NULL)
+	if (h == NULL)
 		return (NULL);
 	if (idx == 0)
 	{
@@ -28,6 +29,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	if (idx != 1 || new == NULL)
 		return (NULL);
+	if (new->next != NULL)
+		new->next->prev = node;
 	node->prev = new;
 	node->next = new->next;
 	new->next = node;
