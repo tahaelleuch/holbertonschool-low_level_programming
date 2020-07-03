@@ -3,7 +3,13 @@
 
 
 def island_perimeter(grid):
-    """get the perimter of the island"""
+    """get the perimter of the island
+    Args:
+        grid([list of lists]): the grid to get to check
+
+    Return:
+        Int: the result
+    """
     if not grid:
         return 0
 
@@ -21,13 +27,22 @@ def island_perimeter(grid):
         peri = 4
     return peri
 
+
 def get_perimeter(grid, i, j):
-    """get the perimeter of one cell"""
+    """get the perimeter of one cell
+    Args:
+        grid([list of lists]): the grid to get to check
+        i(int): the current height
+        j(int): the current length
+
+    Return:
+        int: the counter
+    """
     count = 0
     if grid[i-1][j] == 0 or i == 0:
         count += 1
     try:
-        if grid[i+1][j] == 0 or i == len(grid)-1 :
+        if grid[i+1][j] == 0 or i == len(grid):
             count += 1
     except IndexError:
         count += 1
