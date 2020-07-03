@@ -11,11 +11,10 @@ clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 
 fclean:
 	$(RM) *~ $(NAME)
-	$(RM) *.o
+	$(RM) $(OBJ)
 
-re:
-	oclean all
+re: oclean all
